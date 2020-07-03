@@ -6,7 +6,7 @@
         "php-remove-unused-css"
     ],
     "homepage": "https://github.com/momentum81/php-remove-unused-css",
-    "license": "",
+    "license": "MIT",
     "require": {
         "php" : "^7.2",
         "matthiasmullie/minify": "^1.3"
