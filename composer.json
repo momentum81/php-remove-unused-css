@@ -1,6 +1,6 @@
 {
     "name": "momentum81/php-remove-unused-css",
-    "description": "A PHP lib",
+    "description": "PHP Remove Unused CSS is a tool to remove unused CSS from your website using PHP",
     "keywords": [
         "momentum81",
         "php-remove-unused-css"
