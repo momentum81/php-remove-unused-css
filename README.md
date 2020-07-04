@@ -1,3 +1,5 @@
+## Overview
+
 PHP Remove Unused CSS is a tool to remove unused CSS from your website using PHP. Developed by Momentum 81 - https://momentum81.com.
 
 ```diff
@@ -7,6 +9,14 @@ PHP Remove Unused CSS is a tool to remove unused CSS from your website using PHP
 The main idea is to first compile your CSS into as few files as possible, then you would remove the extra classes using this package, then use this (or another) package to minify the CSS.
 
 Often this is done with JS however that can raise issues if you want to work this into a pure PHP development flow.
+
+## Installation
+
+Installation via composer:
+
+```
+composer require momentum81/php-remove-unused-css
+```
 
 ## Example
 
