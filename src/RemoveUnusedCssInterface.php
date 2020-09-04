@@ -12,7 +12,7 @@ interface RemoveUnusedCssInterface
      *
      * @return  $this
      */
-    public function refactor(): self;
+    public function refactor();
 
 
     /**
@@ -20,7 +20,7 @@ interface RemoveUnusedCssInterface
      *
      * @return  $this
      */
-    public function saveFiles(): self;
+    public function saveFiles();
 
 
     /**
