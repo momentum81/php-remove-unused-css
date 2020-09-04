@@ -80,7 +80,7 @@ class RemoveUnusedCssBasic implements RemoveUnusedCssInterface
     /**
      * @inheritDoc
      */
-    public function refactor(): self
+    public function refactor()
     {
         $this->findAllHtmlFiles();
         $this->findAllStyleSheetFiles();
@@ -96,7 +96,7 @@ class RemoveUnusedCssBasic implements RemoveUnusedCssInterface
     /**
      * @inheritDoc
      */
-    public function saveFiles(): self {
+    public function saveFiles() {
 
         $this->createFiles();
 
