@@ -127,13 +127,14 @@ class RemoveUnusedCssBasic implements RemoveUnusedCssInterface
                 foreach ($block as $selectors => $values) {
 
                     $keep = false;
+                    $mergedArray = array_merge($this->whitelistArray, $this->foundUsedCssElements);
 
                     foreach (explode(',', $selectors) as $selector) {
 
                         if (
-                            (in_array(end(explode(' ', $selector)), array_merge($this->whitelistArray, $this->foundUsedCssElements))) ||
-                            (in_array(end(explode(' ', explode(':', $selector)[0])), array_merge($this->whitelistArray, $this->foundUsedCssElements))) ||
-                            (in_array(explode(':', $selector)[0], array_merge($this->whitelistArray, $this->foundUsedCssElements)))
+                            (in_array(end(explode(' ', $selector)), $mergedArray)) ||
+                            (in_array(end(explode(' ', explode(':', $selector)[0])), $mergedArray)) ||
+                            (in_array(explode(':', $selector)[0], $mergedArray))
                         ) {
                             $keep = true;
                         }
